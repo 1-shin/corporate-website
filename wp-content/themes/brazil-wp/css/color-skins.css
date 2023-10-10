@@ -1,0 +1,177 @@
+/*----------------------------------
+
+	Theme Name: Brazil
+	----------------------
+	
+	/* #Color Skins
+================================================== */
+.colorskin-1 .blox.dark *,.colorskin-2 .blox.dark *,.colorskin-3 .blox.dark *,.colorskin-4 .blox.dark *,.colorskin-5 .blox.dark *,.colorskin-6 .blox.dark *,.colorskin-7 .blox.dark *,.colorskin-8 .blox.dark *,.colorskin-9 .blox.dark *,.colorskin-10 .blox.dark *{color:#fff}
+
+/* == Color Skin 1 #(Teal)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-1 .icon-box5:hover i, .colorskin-1 .icon-box6 i { background-color: #1bbc9b}
+
+/* == TextColors
+---------------- */
+.colorskin-1 #nav a:hover, .colorskin-1 #nav li:hover > a, .colorskin-1 #nav li.current > a, .colorskin-1 #nav li.active > a , .colorskin-1 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-1 #header.sm-rgt-mn #menu-icon.active i, .colorskin-1 .icon-box1 i, .colorskin-1 .blox.dark .icon-box2 i, .colorskin-1 .icon-box3:hover i, .colorskin-1 .icon-box4 i, .colorskin-1 .icon-box5 i { color: #1bbc9b}
+
+/* == BorderColors
+------------------ */
+.colorskin-1 #nav > li.current > a, .colorskin-1 #nav > li.active > a { border-color:#1bbc9b}
+
+
+/* == Color Skin 2 #(Blue)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-2 .icon-box5:hover i, .colorskin-2 .icon-box6 i { background-color: #0093d0}
+
+/* == TextColors
+---------------- */
+.colorskin-2 #nav a:hover, .colorskin-2 #nav li:hover > a, .colorskin-2 #nav li.current > a, .colorskin-2 #nav li.active > a , .colorskin-2 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-2 #header.sm-rgt-mn #menu-icon.active i, .colorskin-2 .icon-box1 i, .colorskin-2 .blox.dark .icon-box2 i, .colorskin-2 .icon-box3:hover i, .colorskin-2 .icon-box4 i, .colorskin-2 .icon-box5 i { color: #0093d0}
+
+/* == BorderColors
+------------------ */
+.colorskin-2 #nav > li.current > a, .colorskin-2 #nav > li.active > a { border-color:#0093d0}
+
+
+
+
+/* == Color Skin 3 #(Red)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-3 .icon-box5:hover i, .colorskin-3 .icon-box6 i { background-color: #e53f51}
+
+/* == TextColors
+---------------- */
+.colorskin-3 #nav a:hover, .colorskin-3 #nav li:hover > a, .colorskin-3 #nav li.current > a, .colorskin-3 #nav li.active > a , .colorskin-3 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-3 #header.sm-rgt-mn #menu-icon.active i, .colorskin-3 .icon-box1 i, .colorskin-3 .blox.dark .icon-box2 i, .colorskin-3 .icon-box3:hover i, .colorskin-3 .icon-box4 i, .colorskin-3 .icon-box5 i { color: #e53f51}
+
+/* == BorderColors
+------------------ */
+.colorskin-3 #nav > li.current > a, .colorskin-3 #nav > li.active > a { border-color:#e53f51}
+
+		
+
+/* == Color Skin 4 #(Yellow)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-4 .icon-box5:hover i, .colorskin-4 .icon-box6 i { background-color: #f1c40f}
+
+/* == TextColors
+---------------- */
+.colorskin-4 #nav a:hover, .colorskin-4 #nav li:hover > a, .colorskin-4 #nav li.current > a, .colorskin-4 #nav li.active > a , .colorskin-4 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-4 #header.sm-rgt-mn #menu-icon.active i, .colorskin-4 .icon-box1 i, .colorskin-4 .blox.dark .icon-box2 i, .colorskin-4 .icon-box3:hover i, .colorskin-4 .icon-box4 i, .colorskin-4 .icon-box5 i { color: #f1c40f}
+
+/* == BorderColors
+------------------ */
+.colorskin-4 #nav > li.current > a, .colorskin-4 #nav > li.active > a { border-color:#f1c40f}
+
+
+
+
+/* == Color Skin 5 #(Pink)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-5 .icon-box5:hover i, .colorskin-5 .icon-box6 i { background-color: #e64883}
+
+/* == TextColors
+---------------- */
+.colorskin-5 #nav a:hover, .colorskin-5 #nav li:hover > a, .colorskin-5 #nav li.current > a, .colorskin-5 #nav li.active > a , .colorskin-5 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-5 #header.sm-rgt-mn #menu-icon.active i, .colorskin-5 .icon-box1 i, .colorskin-5 .blox.dark .icon-box2 i, .colorskin-5 .icon-box3:hover i, .colorskin-5 .icon-box4 i, .colorskin-5 .icon-box5 i { color: #e64883}
+
+/* == BorderColors
+------------------ */
+.colorskin-5 #nav > li.current > a, .colorskin-5 #nav > li.active > a { border-color:#e64883}
+
+
+
+/* == Color Skin 6 #(Green)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-6 .icon-box5:hover i, .colorskin-6 .icon-box6 i { background-color: #45ab48}
+
+/* == TextColors
+---------------- */
+.colorskin-6 #nav a:hover, .colorskin-6 #nav li:hover > a, .colorskin-6 #nav li.current > a, .colorskin-6 #nav li.active > a , .colorskin-6 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-6 #header.sm-rgt-mn #menu-icon.active i, .colorskin-6 .icon-box1 i, .colorskin-6 .blox.dark .icon-box2 i, .colorskin-6 .icon-box3:hover i, .colorskin-6 .icon-box4 i, .colorskin-6 .icon-box5 i { color: #45ab48}
+
+/* == BorderColors
+------------------ */
+.colorskin-6 #nav > li.current > a, .colorskin-6 #nav > li.active > a { border-color:#45ab48}
+
+
+
+/* == Color Skin 7 #(Orchid)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-7 .icon-box5:hover i, .colorskin-7 .icon-box6 i { background-color: #9661ab}
+
+/* == TextColors
+---------------- */
+.colorskin-7 #nav a:hover, .colorskin-7 #nav li:hover > a, .colorskin-7 #nav li.current > a, .colorskin-7 #nav li.active > a , .colorskin-7 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-7 #header.sm-rgt-mn #menu-icon.active i, .colorskin-7 .icon-box1 i, .colorskin-7 .blox.dark .icon-box2 i, .colorskin-7 .icon-box3:hover i, .colorskin-7 .icon-box4 i, .colorskin-7 .icon-box5 i { color: #9661ab}
+
+/* == BorderColors
+------------------ */
+.colorskin-7 #nav > li.current > a, .colorskin-7 #nav > li.active > a { border-color:#9661ab}
+
+
+ 
+/* == Color Skin 8 #(Jade)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-8 .icon-box5:hover i, .colorskin-8 .icon-box6 i { background-color: #0aad80}
+
+/* == TextColors
+---------------- */
+.colorskin-8 #nav a:hover, .colorskin-8 #nav li:hover > a, .colorskin-8 #nav li.current > a, .colorskin-8 #nav li.active > a , .colorskin-8 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-8 #header.sm-rgt-mn #menu-icon.active i, .colorskin-8 .icon-box1 i, .colorskin-8 .blox.dark .icon-box2 i, .colorskin-8 .icon-box3:hover i, .colorskin-8 .icon-box4 i, .colorskin-8 .icon-box5 i { color: #0aad80}
+
+/* == BorderColors
+------------------ */
+.colorskin-8 #nav > li.current > a, .colorskin-8 #nav > li.active > a { border-color:#0aad80}
+
+
+
+/* == Color Skin 9 #(SkyBlue)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-9 .icon-box5:hover i, .colorskin-9 .icon-box6 i { background-color: #0ab1f0}
+
+/* == TextColors
+---------------- */
+.colorskin-9 #nav a:hover, .colorskin-9 #nav li:hover > a, .colorskin-9 #nav li.current > a, .colorskin-9 #nav li.active > a , .colorskin-9 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-9 #header.sm-rgt-mn #menu-icon.active i, .colorskin-9 .icon-box1 i, .colorskin-9 .blox.dark .icon-box2 i, .colorskin-9 .icon-box3:hover i, .colorskin-9 .icon-box4 i, .colorskin-9 .icon-box5 i { color: #0ab1f0}
+
+/* == BorderColors
+------------------ */
+.colorskin-9 #nav > li.current > a, .colorskin-9 #nav > li.active > a { border-color:#0ab1f0}
+
+
+
+/* == Color Skin 10 #(Orange)#
+=================================== */
+
+/* == Backgrounds
+----------------- */
+.colorskin-10 .icon-box5:hover i, .colorskin-10 .icon-box6 i { background-color: #ff5a00}
+
+/* == TextColors
+---------------- */
+.colorskin-10 #nav a:hover, .colorskin-10 #nav li:hover > a, .colorskin-10 #nav li.current > a, .colorskin-10 #nav li.active > a , .colorskin-10 #header.sm-rgt-mn #menu-icon:hover i, .colorskin-10 #header.sm-rgt-mn #menu-icon.active i, .colorskin-10 .icon-box1 i, .colorskin-10 .blox.dark .icon-box2 i, .colorskin-10 .icon-box3:hover i, .colorskin-10 .icon-box4 i, .colorskin-10 .icon-box5 i { color: #ff5a00}
+
+/* == BorderColors
+------------------ */
+.colorskin-10 #nav > li.current > a, .colorskin-10 #nav > li.active > a { border-color:#ff5a00}
