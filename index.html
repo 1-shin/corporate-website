@@ -209,7 +209,14 @@
                 <div class="vc_col-sm-6 wpb_column vc_column_container">
                   <div class="wpb_wrapper">
                     <div class="contact-form">
-                      <form class="frmContact" action="index.html#"> <input type="hidden" name="emailTo" id="emailTo" value="name@domainname.com"> <input type="text" placeholder="Name" name="txtName" id="txtName"> <input type="email" placeholder="Email" name="txtEmail" id="txtEmail"> <input type="text" placeholder="Subject" name="txtSubject" id="txtSubject"> <textarea placeholder="Message" cols="40" rows="10" name="txtText" id="txtText"></textarea> <button class="btnSend" type="button">Send Your Message</button> <span class="spanMessage"></span> </form>
+                      <form class="frmContact" method="POST" data-netlify="true">
+												<input type="hidden" name="emailTo" id="emailTo" value="name@domainname.com">
+												<input type="text" placeholder="Name" name="txtName" id="txtName">
+												<input type="email" placeholder="Email" name="txtEmail" id="txtEmail">
+												<input type="text" placeholder="Subject" name="txtSubject" id="txtSubject">
+												<textarea placeholder="Message" cols="40" rows="10" name="txtText" id="txtText"></textarea>
+												<button class="btnSend" type="submit">Send Your Message</button> <span class="spanMessage"></span>
+											</form>
                     </div>
                   </div>
                 </div>
