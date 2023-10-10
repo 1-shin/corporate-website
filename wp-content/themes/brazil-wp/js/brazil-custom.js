@@ -148,61 +148,6 @@ else {
 
 	})();
 
-
-/* ---------------------------------------------------------------------- */
-/*	Contact Form
-/* ---------------------------------------------------------------------- */
-
-jQuery(document).ready(function(){
-								
-jQuery("button.btnSend").click(function(){
-
-var form = jQuery(this).closest('form');
-
-jQuery.ajax({type:'POST', url: 'php/contact.php', data:jQuery(form).serialize(), success: function(response) {
-
-	 if(parseInt(response)>0)
-	   {
-		 if(jQuery(form).find("#spanMessage").length)
-		 jQuery("#spanMessage").html('<div class="alert alert-success"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>Well done!</strong> Your message has been sent.</div>');
-		 else
-		 alert('Well done! Your message has been sent');
-	   }
-	   else{
-		 if(jQuery(form).find("#spanMessage").length)
-		 jQuery("#spanMessage").html('<div class="alert alert-error"><button type="button" class="close" data-dismiss="alert">&times;</button><strong>Error! </strong> Somthing Wrong</div>');
-		 else
-		 alert('Somthing wrong!');
-	   }   
-		 
-}});
-});
-});
-
-/* ---------------------------------------------------------------------- */
-/* Header search form
-/* ---------------------------------------------------------------------- */
-jQuery(document).ready(function(){
-	
-	jQuery('.search-form-icon').click(function(){
-		
-			jQuery( '.search-form-box' ).addClass('show-sbox');
-			jQuery('#search-box').focus();
-		});
-		
-		
-	jQuery(document).click(function(ev){
-
-		var myID = ev.target.id;
-		
-		if((myID !='searchbox-icon' ) && myID !='search-box'){
-			jQuery( '.search-form-box' ).removeClass('show-sbox');
-		}
-		
-	});		
-		
-	});
-
 /* ---------------------------------------------------------------------- */
 /*		OurClient jCarousel Initialize
 /* ---------------------------------------------------------------------- */
