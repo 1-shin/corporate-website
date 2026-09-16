@@ -1,0 +1,51 @@
+# Netlify 設定
+# 静的ファイルのみを公開する（Tailwind の css/style.css はコミット済みのものを使う）
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # 1年間 HTTPS を強制する。Netlify が自動で HTTPS 化しているので実害はない。
+    # preload リストへの登録はしていない（登録すると解除が難しくなるため）。
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # 使っていないブラウザ機能を明示的に閉じる。
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+# 画像・動画は内容が変わらない前提で1年キャッシュする。
+# 差し替えるときは必ずファイル名も変えること（同名で上書きすると
+# 既存訪問者には最大1年間ふるい方が表示され続ける）。
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# CSS と JS はビルドのたびに同名で変わるためキャッシュを固定できない。
+# 1日だけ保持し、その後は再検証させる。
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, stale-while-revalidate=604800"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/apple-touch-icon.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

@@ -1,0 +1,14 @@
+# エディタ間でインデントと改行を揃える。
+# HTML はタグの入れ子に合わせて2スペース（js/reindent 相当の深さ）で書くこと。
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false

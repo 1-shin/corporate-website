@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ヘッダーの実高 = py-4(32px) + ロゴ h-9(36px) + border-b(1px)。
+       ヘッダーの余白やロゴサイズを変えたら、この値も必ず合わせること。 */
+    --header-h: 69px;
+  }
+
+  /* アンカーリンクの着地位置。各セクションに scroll-mt-* を配って回る代わりに
+     ここで一括指定する（セクションを増やしても対応漏れが起きない）。 */
+  html {
+    scroll-padding-top: var(--header-h);
+  }
+
+  /* キーボード操作時だけフォーカス位置を明示する。マウスクリックでは出ない。 */
+  :focus-visible {
+    outline: 2px solid theme('colors.ink');
+    outline-offset: 2px;
+  }
+
+  /* 濃い背景のセクション（ヒーロー・COMPANY）では黒い輪郭が沈むので白にする。 */
+  .on-dark :focus-visible {
+    outline-color: #fff;
+  }
+
+  /* 動きを減らす設定の環境では、スムーススクロールとトランジションを止める。
+     ヒーロー動画の自動再生も JS 側で抑止している。 */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* キーボードでヘッダーのナビを読み飛ばすためのリンク。
+     フォーカスが当たったときだけ画面内に入る。 */
+  .skip-link {
+    position: fixed;
+    top: -6rem;
+    left: 1rem;
+    z-index: 50;
+    border: 1px solid theme('colors.ink');
+    background-color: #fff;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+  }
+
+  .skip-link:focus {
+    top: 1rem;
+  }
+
+  /* svh 非対応環境（iOS 15.3 以前など）で min-height ごと無効にならないよう
+     vh を先に書いて上書きする。 */
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
+
+  /* サイト共通のアウトラインボタン。px-* を後から当てれば幅だけ変えられる。 */
+  .btn {
+    @apply inline-block border border-ink px-8 py-3 text-sm tracking-widest transition-colors;
+  }
+
+  .btn:hover {
+    @apply bg-ink text-white;
+  }
+
+  /* 仕様やサービス項目を並べる四角いタグ。 */
+  .chip {
+    @apply border border-ink/50 px-4 py-2 text-[13px] tracking-wider;
+  }
+
+  /* 「etc.」のような、実体のない締めくくり用のタグ。 */
+  .chip-etc {
+    @apply border border-dashed border-ink/50 px-4 py-2 text-[13px] tracking-wider text-mute;
+  }
+
+  /* 会社概要の定義リスト1行分（dt + dd）。 */
+  .spec-row {
+    @apply grid grid-cols-[110px_1fr] gap-4 border-b border-white/25 py-5 text-[15px] leading-[2] md:grid-cols-[180px_1fr];
+  }
+
+  /* PROCESS の5枚組。gap を背景色で見せて1pxの区切り線にしている。 */
+  .process-grid {
+    @apply grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-5;
+  }
+
+  /* 2列のときは5枚目が1枚だけ余るので横に伸ばす。5列に戻ったら解除する。 */
+  @media (min-width: 640px) {
+    .process-grid > :last-child {
+      grid-column: span 2 / span 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .process-grid > :last-child {
+      grid-column: auto;
+    }
+  }
+
+  /* 見出しに続く読み（「COMPANY / 会社概要」）。見出しの中に入れて
+     アクセシブルネームを1つにまとめるため、サイズと字体をここで戻す。 */
+  .section-sub {
+    @apply mt-3 block text-sm font-normal tracking-widest text-mute;
+  }
+
+  /* お問い合わせフォームの入力欄。 */
+  .field {
+    @apply w-full border border-line px-4 py-3 text-[15px];
+  }
+
+  .field:focus {
+    @apply border-ink;
+  }
+}
